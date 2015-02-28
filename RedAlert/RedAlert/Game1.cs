@@ -44,7 +44,7 @@ namespace RedAlert
 		protected override void Update(GameTime gameTime)
 		{
 			// Allows the game to exit
-			if (Keyboard.GetState().GetPressedKeys()[0] == Keys.Escape)
+			if (Keyboard.GetState().GetPressedKeys().Length > 0 && Keyboard.GetState().GetPressedKeys()[0] == Keys.Escape)
 				this.Exit();
 
 			base.Update(gameTime);
